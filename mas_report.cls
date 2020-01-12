@@ -283,7 +283,7 @@ not set. Please fix this.}
     {\flushleft}%format
     {}%label
     {0pt}%sep
-    {\bfseries\large\thesection~}%before code
+    {\bfseries\large\color{hbrs}\thesection~}%before code
     % [\vspace{0.5cm}]
 
 \titlespacing{\section}{0pt}{0pt}{5pt}
@@ -292,7 +292,7 @@ not set. Please fix this.}
     {\flushleft}%format
     {}%label
     {0pt}%sep
-    {\bfseries\large\thesubsection~}%before code
+    {\bfseries\large\color{hbrs}\thesubsection~}%before code
     % [\vspace{0.5cm}]
 
 \titlespacing{\subsection}{0pt}{0pt}{2pt}
