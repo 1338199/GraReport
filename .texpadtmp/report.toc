@@ -26,19 +26,21 @@
 \contentsline {subsection}{\numberline {2.1.11}视口变换}{22}{subsection.2.1.11}% 
 \contentsline {section}{\numberline {2.2}裁剪}{24}{section.2.2}% 
 \contentsline {section}{\numberline {2.3}线框画线}{24}{section.2.3}% 
-\contentsline {chapter}{\numberline {3}附加功能}{25}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}区域填充}{25}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}纹理贴图}{25}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}光照}{25}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}三维模型}{25}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}天空盒子}{25}{section.3.5}% 
-\contentsline {chapter}{\numberline {4}功能效果演示}{27}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}顶点变换}{27}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}裁剪}{27}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}线框画线}{27}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}扫描线填充}{27}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}纹理贴图}{27}{section.4.5}% 
-\contentsline {section}{\numberline {4.6}光照}{27}{section.4.6}% 
-\contentsline {section}{\numberline {4.7}三维模型}{27}{section.4.7}% 
-\contentsline {section}{\numberline {4.8}天空盒子}{27}{section.4.8}% 
-\contentsline {chapter}{References}{29}{section.4.8}% 
+\contentsline {chapter}{\numberline {3}附加功能}{27}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}键鼠交互的相机旋转移动}{27}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}区域填充}{27}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}纹理贴图}{27}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}光照}{27}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}三维模型}{27}{section.3.5}% 
+\contentsline {section}{\numberline {3.6}天空盒子}{27}{section.3.6}% 
+\contentsline {chapter}{\numberline {4}功能效果演示}{29}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}顶点变换}{29}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}裁剪}{29}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}线框画线}{29}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}键鼠交互的相机移动}{29}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}扫描线填充}{29}{section.4.5}% 
+\contentsline {section}{\numberline {4.6}纹理贴图}{29}{section.4.6}% 
+\contentsline {section}{\numberline {4.7}光照}{29}{section.4.7}% 
+\contentsline {section}{\numberline {4.8}三维模型}{29}{section.4.8}% 
+\contentsline {section}{\numberline {4.9}天空盒子}{29}{section.4.9}% 
+\contentsline {chapter}{References}{31}{section.4.9}% 

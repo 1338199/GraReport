@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.22)  13 JAN 2020 18:05
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.22)  13 JAN 2020 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1778,15 +1778,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]) (./chapters/ch03_methodology.tex [24]
-Chapter 3.
-) (./chapters/ch04_solution.tex [25
+ [23]
+File: images/block.png Graphic file (type bmp)
+<images/block.png>
 
-] [26
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]) (./chapters/ch03_methodology.tex [25] [26
+
+]
+Chapter 3.
+) (./chapters/ch04_solution.tex [27] [28
 
 ]
 Chapter 4.
-) [27] [28
+) [29] [30
 
 ] (/Users/johnsauhu/Documents/GraReport/.texpadtmp/report.bbl
 
@@ -1794,7 +1800,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
- [29
+ [31
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
@@ -1806,12 +1812,12 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 27778 strings out of 492916
- 531754 string characters out of 6133345
- 928578 words of memory out of 5000000
- 31532 multiletter control sequences out of 15000+600000
+ 27784 strings out of 492916
+ 531852 string characters out of 6133345
+ 928629 words of memory out of 5000000
+ 31538 multiletter control sequences out of 15000+600000
  537527 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  51i,22n,64p,360b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/johnsauhu/Documents/GraReport/.texpadtmp/report.pdf (39 pages).
+Output written on /Users/johnsauhu/Documents/GraReport/.texpadtmp/report.pdf (41 pages).

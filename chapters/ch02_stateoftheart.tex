@@ -350,6 +350,31 @@
     \section{裁剪}
     \section{线框画线}
     \begin{spacing}{2.5}
-    光栅中常用的算法仍是Bresenham算法，我们的项目也一样。关于Bresenham算法的原理课堂上已经有详细的描述，此处不再赘述。
+    光栅中常用的算法仍是Bresenham算法，我们的项目也一样。关于Bresenham算法的原理课堂上已经有详细的描述，此处不再赘述。书本上对Bresenham算法的描述限制在$x > 0, y > 0$且直线斜率在$[0,1]$之间，即下图中的1a象限：
+    \begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{images/block.png}
+		\caption{Bresenham画线象限示意图}
+		\label{block}
+	\end{figure}
+	为了实现光栅渲染，必须将Bresenham扩展到全部8个象限。其实其他象限的基本处理思路与1a是一样的，只不过在1a中y随x递增而递增，在其他象限可能是x随y递增而递增，y随x递增而递减，具体情况如下表所示，只需要判定当前属于哪一象限，然后相应使用Bresenham即可。
+	\begin{table}[H]
+	\begin{center}
+    \begin{tabular}{p{5cm}|p{5cm}}
+        \hline
+        象限 & 取值\\
+        \hline
+        1a、2a &  $y_{i+1}=y_{i}$或$y_{i} = y_{i}+1$\\
+        \hline
+        3a、4a & $y_{i+1}=y_{i}$或$y_{i} = y_{i}-1$\\
+        \hline
+        1b、2b & $x_{i+1}=x_{i}$或$x_{i} = x_{i}+1$\\
+        \hline
+        3b、4b & $x_{i+1}=x_{i}$或$x_{i} = x_{i}-1$\\
+        \hline
+    \end{tabular}
+	\end{center}
+	\caption{象限取值表}
+	\end{table}
     \end{spacing}
 \end{document}
