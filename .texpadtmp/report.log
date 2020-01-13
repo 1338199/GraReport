@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.22)  13 JAN 2020 19:38
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.22)  13 JAN 2020 20:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -708,7 +708,20 @@ Package: xeCJK-listings 2019/04/07 v3.7.2 xeCJK patch file for listings
 LaTeX Warning: Unused global option(s):
     [twosides].
 
-(/Users/johnsauhu/Documents/GraReport/.texpadtmp/report.aux)
+(/Users/johnsauhu/Documents/GraReport/.texpadtmp/report.aux
+
+LaTeX Warning: Label `yrotate' multiply defined.
+
+
+LaTeX Warning: Label `xrotate' multiply defined.
+
+
+LaTeX Warning: Label `zrotate' multiply defined.
+
+
+LaTeX Warning: Label `zrotate' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -1816,11 +1829,17 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 (fontspec)             <->"[FandolFang-Regular.otf]/OT"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-) (./chapters/ch04_solution.tex [27] [28
+
+Underfull \vbox (badness 6078) has occurred while \output is active []
+
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]) (./chapters/ch04_solution.tex [29] [30
 
 ]
 Chapter 4.
-) [29] [30
+) [31] [32
 
 ] (/Users/johnsauhu/Documents/GraReport/.texpadtmp/report.bbl
 
@@ -1828,7 +1847,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
- [31
+ [33
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
@@ -1837,15 +1856,19 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 109.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: .
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 27994 strings out of 492916
- 535001 string characters out of 6133345
+ 27996 strings out of 492916
+ 535026 string characters out of 6133345
  944832 words of memory out of 5000000
- 31727 multiletter control sequences out of 15000+600000
+ 31729 multiletter control sequences out of 15000+600000
  537567 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  51i,22n,74p,360b,861s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/johnsauhu/Documents/GraReport/.texpadtmp/report.pdf (41 pages).
+Output written on /Users/johnsauhu/Documents/GraReport/.texpadtmp/report.pdf (43 pages).

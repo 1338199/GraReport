@@ -10,7 +10,64 @@
 	\begin{lstlisting}
 		hello world!
 	\end{lstlisting}
+	\subsection{平移旋转变换}
+	\begin{spacing}{2.5}
+	其实，所谓相机的旋转移动可以看成相机固定不动，而物体在进行逆变换，例如，相机左移一个单位其实就是物体向右移动一个单位。因此要相机的旋转移动，只要实现物体对应的旋转移动即可。所用到的变换矩阵如下：
+	\begin{enumerate}
+		\item 平移变换矩阵
+		\begin{equation}
+		\begin{pmatrix}
+			1 &  0&  0&0 \\ 
+ 			0&  1&  0& 0\\ 
+ 			0& 0 & 1 &0 \\ 
+ 			T_{x}&  T_{y}&  T_{z}& 1
+		\end{pmatrix}
+		\label{transfer_1}
+		\end{equation}
+		\item 	绕X轴旋转变换矩阵
+		\begin{equation}
+		\begin{pmatrix}
+			 1&  0&  0 &0 \\ 
+ 			0&  cos\theta &  sin\theta& 0\\ 
+ 			 0& -sin\theta & cos\theta &0 \\ 
+ 			0&  0&  0& 1
+		\end{pmatrix}
+		\label{yrotate}
+		\end{equation}
+		\item 绕Y轴旋转变换矩阵
+		\begin{equation}
+		\begin{pmatrix}
+			cos\theta &  0&  -sin\theta &0 \\ 
+ 			0&  1&  0& 0\\ 
+ 			sin\theta & 0 & cos\theta &0 \\ 
+ 			0&  0&  0& 1
+		\end{pmatrix}
+		\label{xrotate}	
+		\end{equation}
 	
+		\item 绕Z轴旋转变换矩阵
+		\begin{equation}
+		\begin{pmatrix}
+			cos\theta &  sin\theta &  0 &0 \\ 
+ 			-sin\theta &  cos\theta &  0& 0\\ 
+ 			0 & 0 & 1 &0 \\ 
+ 			0&  0&  0& 1
+		\end{pmatrix}
+		\label{zrotate}
+		\end{equation}
+		\item 缩放变换矩阵
+		\begin{equation}
+		\begin{pmatrix}
+			S_{x}& 0 &  0 &0 \\ 
+ 			0 &  S_{y} &  0& 0\\ 
+ 			0 & 0 & S_{z} &0 \\ 
+ 			0&  0&  0& 1
+		\end{pmatrix}
+		\label{zrotate}
+		\end{equation}
+	\end{enumerate}
+	\end{spacing}
+
     \section{区域填充}
 
     \section{纹理贴图}
