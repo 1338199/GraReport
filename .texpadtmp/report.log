@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.22)  12 JAN 2020 18:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.22)  13 JAN 2020 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1735,15 +1735,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
 [9
 
-]) (./chapters/ch03_methodology.tex [10]
-Chapter 3.
-) (./chapters/ch04_solution.tex [11
+]
+File: images/camera.png Graphic file (type bmp)
+<images/camera.png>
+ [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
-] [12
+ []
+
+[12] [13]
+File: images/project1.png Graphic file (type bmp)
+<images/project1.png>
+ [14]
+Underfull \vbox (badness 1817) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Missing character: There is no 、 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 、 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 、 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 、 in font [lmroman12-regular]:mapping=tex-text;!
+Missing character: There is no 、 in font [lmroman12-regular]:mapping=tex-text;!
+File: images/fovy.png Graphic file (type bmp)
+<images/fovy.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19] [20] [21]
+File: images/viewport.png Graphic file (type bmp)
+<images/viewport.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]) (./chapters/ch03_methodology.tex [24]
+Chapter 3.
+) (./chapters/ch04_solution.tex [25
+
+] [26
 
 ]
 Chapter 4.
-) [13] [14
+) [27] [28
 
 ] (/Users/johnsauhu/Documents/GraReport/.texpadtmp/report.bbl
 
@@ -1751,7 +1794,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
- [15
+ [29
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
@@ -1763,12 +1806,12 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 27744 strings out of 492916
- 531269 string characters out of 6133345
- 928034 words of memory out of 5000000
- 31502 multiletter control sequences out of 15000+600000
+ 27778 strings out of 492916
+ 531754 string characters out of 6133345
+ 928578 words of memory out of 5000000
+ 31532 multiletter control sequences out of 15000+600000
  537527 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 51i,12n,64p,360b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,22n,64p,360b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/johnsauhu/Documents/GraReport/.texpadtmp/report.pdf (25 pages).
+Output written on /Users/johnsauhu/Documents/GraReport/.texpadtmp/report.pdf (39 pages).

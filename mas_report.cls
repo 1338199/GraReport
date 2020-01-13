@@ -297,6 +297,16 @@ not set. Please fix this.}
 
 \titlespacing{\subsection}{0pt}{0pt}{2pt}
 
+
+\titleformat{\subsubsection}[display]
+    {\flushleft}%format
+    {}%label
+    {0pt}%sep
+    {\bfseries\large\color{hbrs}}%before code
+    % [\vspace{0.5cm}]
+
+\titlespacing{\subsubsection}{0pt}{0pt}{1pt}
+
 %\renewcommand{\cfttoctitlefont}{\color{hbrs}}
 %\renewcommand{\cftlottitlefont}{\flushright\color{hbrs}}
 %\renewcommand{\cftloftitlefont}{\flushright\color{hbrs}}

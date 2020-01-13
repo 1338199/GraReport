@@ -1,5 +1,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces 软光栅渲染器坐标处理流水线\relax }}{9}{figure.caption.5}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 相机坐标系的原点与世界坐标系的原点重合\relax }}{11}{figure.caption.6}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 视锥体截面\relax }}{15}{figure.caption.7}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 视角Fovy示意图\relax }}{20}{figure.caption.8}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 视口变换示意图\relax }}{22}{figure.caption.9}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
