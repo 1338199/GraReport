@@ -57,6 +57,8 @@
 \usepackage{setspace}
 \usepackage{subfiles}
 \usepackage{geometry}
+\usepackage{listing}
+\usepackage{xcolor}
 % \usepackage{showframe}
 \usepackage{subcaption}	% Required for sub-figures
 \usepackage{multirow} % Required to enable merging of columns/rows in a table
