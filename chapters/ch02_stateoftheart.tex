@@ -348,6 +348,90 @@
 	通常的视口坐标系的起点为$[X,Y]=[0,0]$，我们也不需要关注Z方向上的变换。
 	\end{spacing}
     \section{裁剪}
+
+    \begin{spacing}{2.5}
+    裁剪是一个非常基础且重要的功能，为了渲染整个物体，需要将物体切分为一个个的三角形进行统一操作，其中切分为三角形后的第一步，就是需要裁剪，目的有两个：\\
+    1. 裁剪掉在视野范围内不应该被看到的部分\\
+    2. 通过裁剪可以减少计算的工作量，在视野外的部分不需要渲染\\
+    \begin{figure}[H]
+		\centering
+		\includegraphics[width=1.0\textwidth]{images/cvv.png}
+		\caption{透视投影变换}
+		\label{line}
+	\end{figure}
+		
+		
+		
+	裁剪针对的是已经分割好为若干三角形的几何体，分割的步骤比较简单就不详述，在处理这些三角形的时候，需要先从空间坐标变换到cvv裁剪坐标进行裁剪，针对上下左右前后六个面进行裁剪操作，对于每一个面的裁剪，坐标都有变化，所以使用六个函数来进行裁剪操作：
+    \end{spacing}
+    \begin{lstlisting}
+static void doClippingInCvv(vector<Triangle> &triList){
+        _doClppingInCvvAgainstNearPlane(triList);
+        _doClppingInCvvAgainstFarPlane(triList);
+        _doClppingInCvvAgainstLeftPlane(triList);
+        _doClppingInCvvAgainstRightPlane(triList);
+        _doClppingInCvvAgainstTopPlane(triList);
+        _doClppingInCvvAgainstBottomPlane(triList);
+    }
+	\end{lstlisting}
+
+    \begin{spacing}{2.5}
+ 	裁剪是在cvv空间进行的操作，整个裁剪流程如下图所示：
+    	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.0\textwidth]{images/clip1.png}
+		\caption{裁剪流程}
+		\label{line}
+	\end{figure}
+	首先将图像分割出的一组三角形向量通过六个面分别进行裁剪操作，对于每一个边，需要判断其内外关系，其中按照边界内的点数，分为0、1、2、3这四种情况，这四种情况如下图所示：
+	    	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{images/clip2.png}
+		\caption{三角形相对于边界的四种情况}
+		\label{line}
+	\end{figure}
+	
+第一种情况，内部点有三个，即三角形全在内部，此时不进行裁剪\\
+
+第二种情况，内部点有一个，有两条边和边界有交点，此时需要用A、D、C三点的计算出CD/AC的占比$n_1$，再利用$n_1$在AC边上做插值求得D点的坐标，E点的坐标用相同的方法可以求得，此时生成的三角形CDE即为在内部的三角形，加入输出向量\\
+    \end{spacing}
+
+    \begin{lstlisting}
+vector<int> indiceOut;
+int inIdx = 0;
+for (int i = 0; i < bList.size(); ++i)
+{
+	if (bList.at(i)){
+		indiceOut.push_back(i);
+	else {
+		inIdx = i;
+	}
+    VertexOut &vertIn = vertice.at(inIdx);
+    for (int i = 0; i < indiceOut.size(); ++i)
+    {
+        int index = indiceOut.at(i);
+        VertexOut &vertOut = vertice.at(index);
+        double factor = _getFactorForLeftPlane(vertIn, vertOut);
+        VertexOut vertNew = vertIn.interpolate(vertOut, factor);
+        vertice[index] = vertNew;
+    }
+    tri.v1 = vertice[0];
+    tri.v2 = vertice[1];
+    tri.v3 = vertice[2];
+	\end{lstlisting}
+\begin{spacing}{2.5}
+第三种情况，内部点有两个，和第二种情况求法一致，但不同的是最后得到的是一个四边形而非三角形，所以要多一步分割的过程，将四边形BCDE分割为三角形BCE和三角形CDE\\
+
+第四种情况，内部点有零个，这代表三角形完全不在分界线以内，也就是说三角形应当被完全剔除，输出为空，这样也为后面的计算减少了工作量\\
+		
+    \end{spacing}
+    \begin{spacing}{2.5}
+
+    \end{spacing}
+    \begin{spacing}{2.5}
+    	
+    \end{spacing}
+
     \section{线框画线}
     \begin{spacing}{2.5}
     光栅中常用的算法仍是Bresenham算法，我们的项目也一样。关于Bresenham算法的原理课堂上已经有详细的描述，此处不再赘述。书本上对Bresenham算法的描述限制在$x > 0, y > 0$且直线斜率在$[0,1]$之间，即下图中的1a象限：
@@ -377,4 +461,7 @@
 	\caption{象限取值表}
 	\end{table}
     \end{spacing}
+
+
+
 \end{document}
