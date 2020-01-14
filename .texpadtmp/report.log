@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.1.12)  14 JAN 2020 21:58
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.1.12)  14 JAN 2020 23:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -714,6 +714,15 @@ LaTeX Warning: Unused global option(s):
 
 (/Users/fregs/Desktop/代码区/图形学文档/.texpadtmp/report.aux
 
+LaTeX Warning: Label `line' multiply defined.
+
+
+LaTeX Warning: Label `line' multiply defined.
+
+
+LaTeX Warning: Label `line' multiply defined.
+
+
 LaTeX Warning: Label `yrotate' multiply defined.
 
 
@@ -724,6 +733,9 @@ LaTeX Warning: Label `zrotate' multiply defined.
 
 
 LaTeX Warning: Label `zrotate' multiply defined.
+
+
+LaTeX Warning: Label `line' multiply defined.
 
 )
 \openout1 = `report.aux'.
@@ -1707,9 +1719,6 @@ Package microtype Info: Character `\textquestiondown ' is missing
 
 ] (./chapters/ch01_introduction.tex
 Chapter 1.
-[1
-
-]
 Package microtype Info: Character `\AE ' is missing
 (microtype)             in font `\TU/FandolSong-Regular(0)/bx/n/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1737,6 +1746,11 @@ Package microtype Info: Character `\textexclamdown ' is missing
 Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/FandolSong-Regular(0)/bx/n/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
+[1
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1744,12 +1758,20 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2] [3]
-Overfull \hbox (1.64339pt too wide) in paragraph at lines 19--19
+[2]
+Overfull \hbox (1.64339pt too wide) in paragraph at lines 21--21
 []\TU/lmr/m/n/12 Etiam ac leo a risus tristique nonummy. Donec dignissim tincidunt nulla. Vestibu-
  []
 
-[4] [5] [6] [7]) (./chapters/ch02_stateoftheart.tex [8]
+
+Underfull \vbox (badness 1205) has occurred while \output is active []
+
+ [3] [4] [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]) (./chapters/ch02_stateoftheart.tex [7] [8
+
+]
 Chapter 2.
 File: images/pipline.png Graphic file (type bmp)
 <images/pipline.png>
@@ -1758,9 +1780,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
 
-[9
-
-]
+[9]
 File: images/camera.png Graphic file (type bmp)
 <images/camera.png>
  [10] [11]
@@ -1804,15 +1824,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-File: images/block.png Graphic file (type bmp)
-<images/block.png>
+File: images/cvv.png Graphic file (type bmp)
+<images/cvv.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--361
+
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]) (./chapters/ch03_methodology.tex [25] [26
-
-]
-Chapter 3.
+ [24]
 
 Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
 (fontspec)                Script "CJK".
@@ -1833,55 +1855,89 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 (fontspec)             <->"[FandolFang-Regular.otf]/OT"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
+File: images/clip1.png Graphic file (type bmp)
+<images/clip1.png>
 
-Underfull \vbox (badness 6078) has occurred while \output is active []
-
- [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
-File: images/phong_model.png Graphic file (type bmp)
-<images/phong_model.png>
+ [25]
+File: images/clip2.png Graphic file (type bmp)
+<images/clip2.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--85
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
 
-Underfull \vbox (badness 5652) has occurred while \output is active []
+Underfull \vbox (badness 5847) has occurred while \output is active []
 
- [29]
-Underfull \vbox (badness 2635) has occurred while \output is active []
+ [26]
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
- [30] [31]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+
+ []
+
+File: images/block.png Graphic file (type bmp)
+<images/block.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]) (./chapters/ch03_methodology.tex [29] [30
+
+]
+Chapter 3.
+[31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32] [33]
+Underfull \vbox (badness 5175) has occurred while \output is active []
+
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+File: images/scanline1.png Graphic file (type bmp)
+<images/scanline1.png>
+ [36] [37]
+File: images/phong_model.png Graphic file (type bmp)
+<images/phong_model.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--239
+
+ []
+
+[38] [39]
 File: images/diffuse_light.png Graphic file (type bmp)
 <images/diffuse_light.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
+ [40] [41]
 File: images/specular_light.png Graphic file (type bmp)
 <images/specular_light.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [42]
 Underfull \vbox (badness 4403) has occurred while \output is active []
 
- [35]
+ [43]
 File: images/shininess.png Graphic file (type bmp)
 <images/shininess.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]) (./chapters/ch04_solution.tex [37] [38
+ [44]) (./chapters/ch04_solution.tex [45] [46
 
 ]
 Chapter 4.
-) [39] [40
+) [47] [48
 
 ] (/Users/fregs/Desktop/代码区/图形学文档/.texpadtmp/report.bbl
 
@@ -1889,7 +1945,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
- [41
+ [49
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
@@ -1905,12 +1961,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 28177 strings out of 492916
- 542090 string characters out of 6133345
- 957052 words of memory out of 5000000
- 31902 multiletter control sequences out of 15000+600000
+ 28392 strings out of 492916
+ 545104 string characters out of 6133345
+ 1014052 words of memory out of 5000000
+ 32113 multiletter control sequences out of 15000+600000
  537567 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 51i,22n,74p,360b,1402s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,22n,74p,360b,1398s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/fregs/Desktop/代码区/图形学文档/.texpadtmp/report.pdf (51 pages).
+Output written on /Users/fregs/Desktop/代码区/图形学文档/.texpadtmp/report.pdf (59 pages).
