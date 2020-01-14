@@ -5,10 +5,14 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces 视锥体截面\relax }}{15}{figure.caption.7}% 
 \contentsline {figure}{\numberline {2.4}{\ignorespaces 视角Fovy示意图\relax }}{20}{figure.caption.8}% 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces 视口变换示意图\relax }}{22}{figure.caption.9}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Bresenham画线象限示意图\relax }}{25}{figure.caption.10}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces 透视投影变换\relax }}{25}{figure.caption.10}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces 裁剪流程\relax }}{26}{figure.caption.11}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces 三角形相对于边界的四种情况\relax }}{26}{figure.caption.12}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Bresenham画线象限示意图\relax }}{29}{figure.caption.13}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 冯氏光照模型分量\relax }}{30}{figure.caption.12}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 漫反射分量示意图\relax }}{33}{figure.caption.13}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 镜面分量示意图\relax }}{35}{figure.caption.14}% 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 不同反光度的视觉效果\relax }}{37}{figure.caption.15}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 普通三角形的切分\relax }}{37}{figure.caption.15}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 冯氏光照模型分量\relax }}{39}{figure.caption.16}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 漫反射分量示意图\relax }}{41}{figure.caption.17}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 镜面分量示意图\relax }}{43}{figure.caption.18}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 不同反光度的视觉效果\relax }}{45}{figure.caption.19}% 
 \addvspace {10\p@ }
