@@ -331,9 +331,58 @@ void App::onMouseDrag(SDL_Event& event) {
   
 
     \section{三维模型}
+
+        \begin{spacing}{2.5}
+    三维模型的导入使用到了第三方assimp库，assimp是OpenGL的一个三维模型读取接口，通过这一接口可以读取常见的三维模型文件如obj文件。assimp的架构如下：
+    \begin{figure}[H]
+    	\centering
+		\includegraphics[width=1.0\textwidth]{images/assimp.png}
+		\caption{Assimp的架构}
+		\label{shininess}
+    \end{figure}
     
+    
+    通过引入assimp包，我们就可以在代码中读取obj格式的三维模型，具体方式如下：
+        \end{spacing}
+
+    \begin{lstlisting}
+void Sprite3D::init(const std::string &fileName) {
+    _shader = Sprite3DShader::create();
+    Assimp::Importer importer;
+    const aiScene * scene = importer.ReadFile(getFullPath(fileName), aiProcess_Triangulate | aiProcess_FlipUVs);
+    initShader();
+    handleNode(scene->mRootNode , scene);
+}	
+    \end{lstlisting}
+
+\begin{spacing}{2.5}
+接下来是三维模型的获取，我们没有从网上直接找现成的三维模型，而是借助Photoshop和Maya，自己制作了一个同济大学校徽的三维模型，我们认为这样更有意义。
+    \begin{figure}[H]
+    	\centering
+		\includegraphics[width=0.8\textwidth]{images/tj-logo.png}
+		\caption{校徽的三维模型}
+		\label{shininess}
+    \end{figure}
+\end{spacing}
+
+
     \section{天空盒子}
-    
+            \begin{spacing}{2.5}
+            	     在实时渲染中，如果要绘制非常远的物体，例如远处的山、天空等，随着观察者的距离的移动，这个物体的大小是几乎没有什么变化的，这个时候可以考虑采用天空盒子技术。
+            \end{spacing}
+
+
+     \begin{figure}[H]
+    	\centering
+		\includegraphics[width=1.0\textwidth]{images/skybox.jpeg}
+		\caption{天空盒子示意图}
+		\label{skybox}
+    \end{figure}
+                \begin{spacing}{2.5}
+                	    如同，所谓的天空盒实际就是一个单位立方体展开，然后在六个面贴上相应的贴图即可。在实际实现时，将立方体的坐标指定为单位元。
+                \end{spacing}
+
+
     
     
 \end{document}

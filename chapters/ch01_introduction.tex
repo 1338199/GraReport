@@ -3,34 +3,56 @@
 \begin{document}
     \chapter{项目介绍}
     \section{项目综述}
-    	我们的项目是实现一个软光栅渲染器。实现的基本功能：顶点变换、裁剪、线框画线
-	附加功能：有键盘鼠标交互的相机旋转移动、扫描线填充、三维模型读取、纹理贴图、点光源光照、天空盒子
+        \begin{spacing}{2.5}
+我们的项目是实现一个软光栅渲染器。实现的基本功能：顶点变换、裁剪、线框画线
+	附加功能：有键盘鼠标交互的相机旋转移动、扫描线填充、三维模型读取、纹理贴图、点光源光照、天空盒子     	
+        \end{spacing}
 
-    \subsection{...}
 
-    \lipsum[6-10]
-
+    \subsection{...}
     \subsection{...}
 
 
     \section{开发环境}
+	        \begin{spacing}{2.5}
+由于我们的组员用的都是Mac，使用的C++开发环境为Xcode，具体版本为 Xcode Version 11.3 (11C29)
+	        \end{spacing}
+
+
+	
     \subsection{...}
 
-    \lipsum[11-15]
+    
 
-    \subsection{...}
-
-    \subsection{...}
+    \subsection{...}
 
 
 
     \section{第三方依赖库}
-    \subsection{...}
-
-    \lipsum[21-30]
-
-    \subsection{...}
 
 
-    \subsection{...}
+    \subsection{SDL2}
+\begin{spacing}{2.5}
+   SDL2（Simple DirectMedia Layer 2）是一套开放源代码的跨平台多媒体开发库，使用C语言写成。其主要用于游戏开发中的多媒体处理，如视频渲染，音频播放，鼠标/键盘控制等操作。它对外接供了一套统一的接口，但在内部，它会根据不同平台调用不同的底层API库。
+   在Mac平台下，调用的是OpenGL。在本项目中，我们调用了SDL2实现了窗口的创建、键盘敲击事件监听、鼠标按下与拖拽的监听等功能。
+\end{spacing}
+
+
+
+    \subsection{Assimp}
+        \begin{spacing}{2.5}
+        	Assimp库（Open Asset Import Library）是一个非常流行的模型导入库，可以导入复杂的三维模型，当使用Assimp导入模型的时候，它通常会将整个模型加载进一个场景(Scene)，然后将场景载入为一系列的节点(Node)，每个节点包含了场景对象中所储存数据的索引，每个节点都可以有任意数量的子节点。Assimp的具体结构会在后面的三维模型导入部分给出，在项目中我们利用了Assimp库进行同济大学校徽的三维模型导入，使其能加载进我们的场景中。
+        \end{spacing}
+
+    
+
+
+
+    \subsection{Stb\_image}
+            \begin{spacing}{2.5}
+            	    stb\_image.h是Sean Barrett的一个非常流行的单头文件图像加载库，它能够加载大部分流行的图片文件格式，我们的项目利用了stb\_image进行贴图文件的读取和解析成纹理。
+            \end{spacing}
+
+
+    
 \end{document}
