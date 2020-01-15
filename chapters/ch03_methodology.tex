@@ -225,10 +225,58 @@ void App::onMouseDrag(SDL_Event& event) {
 
 
     \section{纹理贴图}
+        \begin{spacing}{2.5}
+        	在实现纹理渲染时，我们参照了OpenGl的基本渲染流程：
+      \begin{figure}[H]
+    	\centering
+		\includegraphics[width=1.0\textwidth]{images/gl_texture.jpg}
+		\caption{参考OpenGl的渲染模型}
+		\label{gl_texture}
+    \end{figure}
     
+    实现的基本思想如上图所示，纹理由图片读取而来，之后，根据纹理格式的不同，可以选择直接进入片元着色器或先进入顶点着色器。进入顶点着色器后，需要将顶点装配为三角形，并在此处进行一次变换再传入片元着色器。\\
+    将上述流程细化如下:
+    \begin{figure}[H]
+    	\centering
+		\includegraphics[width=1.0\textwidth]{images/texture_sequence.png}
+		\caption{细化后的材质渲染流程}
+		\label{texture_sequence}
+    \end{figure}
+    
+    其中，扫描线填充算法之后的部分已经在之前提到，唯一值得注意的就是，顶点着色器同样要进行模型变换、相机变换、投影变换同时更新该顶点的法线，这样得到的才是透视纹理，否则将得到不能正确表示空间关系的仿射纹理：
+    
+     \begin{figure}[H]
+    	\centering
+		\includegraphics[width=1.0\textwidth]{images/wrong_example.jpg}
+		\caption{仿射纹理和透视纹理}
+		\label{wrong_example}
+    \end{figure}
+    
+    顶点着色器在代码中的实现如下：
+        \end{spacing}
+
+        
+    \begin{lstlisting}
+    VertexOut Shader::vs(const Vertex &vert) const {
+    VertexOut vOut;
+    auto temp = Vec4(vert.pos , 1.0f);
+    vOut.posTrans = _mv.transform(temp);
+    vOut.pos = _mvp.transform(Vec4(vert.pos , 1.0f));
+    vOut.posWorld = _model.transform(Vec4(vert.pos , 1.0f)).get3DNormal();
+    vOut.normal = _model.transform(Vec4(vert.normal , 0)).getVec3();
+    vOut.color = vert.color;
+    vOut.tex = vert.tex;
+    
+    return vOut;
+}
+    \end{lstlisting}
+            \begin{spacing}{2.5}
+            	由于shader是全局唯一的，故可以直接采用之前推导出的变换矩阵对要绘制的纹理进行变换。
+            \end{spacing}
     \section{光照}
-    \begin{spacing}{2.5}
+
     \subsection{冯氏光照模型}
+        \begin{spacing}{2.5}
     现实世界的光照是很复杂的，物体的材质和光照的特性都会影响最终的渲染效果，在有限的计算能力下，我们很难模拟完全真实的光照条件。因此，图形学的渲染更倾向于使用一种简化的模型对现实情况进行近似。\\
     本次我们参考了OpenGL的处理方式，采用冯氏光照模型(Phong Lighting Model)进行光照模拟。冯氏光照模型的主要结构由3个分量组成：环境(Ambient)、漫反射(Diffuse)和镜面(Specular)光照。下图展示了这些光照分量的影响：\\
     \begin{figure}[H]
