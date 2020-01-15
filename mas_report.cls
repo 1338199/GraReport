@@ -105,12 +105,11 @@ not set. Please fix this.}
     \newgeometry{left=3cm, bottom=3cm}
 
     \begin{minipage}{0.475\textwidth}
-        \centering
-	   \includegraphics[height=1.3cm]{images/Logo-HBRS-cyan.png}
+	   \includegraphics[height=2.2cm]{images/logo-left.png}
     \end{minipage}
     \begin{minipage}{0.475\textwidth}
         \centering
-	   \includegraphics[height=1.3cm]{images/b-it.pdf}
+	   \includegraphics[height=2.2cm]{images/logo-right.png}
     \end{minipage}
     \centering
     \vfill
