@@ -225,8 +225,20 @@ void App::onMouseDrag(SDL_Event& event) {
 
 
     \section{纹理贴图}
-        \begin{spacing}{2.5}
-        	在实现纹理渲染时，我们参照了OpenGl的基本渲染流程：
+
+        	在实现纹理渲染时，我们参照了OpenGl的基本渲染流程，当然有几个概念必须清楚：
+       \begin{enumerate}
+       	\item \textbf{\textcolor{hbrs}{顶点着色器。}}顶点着色器读入顶点和纹理的信息，然后主要进行矩阵变换的计算，其结果会传递给图元装配区。
+       	\item \textbf{\textcolor{hbrs}{图元。}}在光栅渲染器中，复杂的图形被处理分割为基本的图元进行处理。常见的图元有：点、线、三角形。在我们的项目中使用的是三角形。而图元的三角形还能做进一步的分割，分割为：平顶三角形和平底三角形。这样做的好处是方便扫描线算法处理。
+       	\begin{itemize}
+       		\item \textbf{\textcolor{hbrs}{平顶三角形。}}顶边与x轴平行的三角形。
+       	\item \textbf{\textcolor{hbrs}{平底三角形。}}底边与x轴平行的三角形。
+       	\end{itemize}
+
+       	\item \textbf{\textcolor{hbrs}{片元着色器。}}片元着色器的主要功能是对每个要着色的像素位置插值计算对应的纹理值或颜色值。
+       	
+       \end{enumerate}
+      \begin{spacing}{2.5}
       \begin{figure}[H]
     	\centering
 		\includegraphics[width=1.0\textwidth]{images/gl_texture.jpg}
